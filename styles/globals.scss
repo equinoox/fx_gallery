@@ -114,6 +114,14 @@ body {
   
 }
 
+
+@media only screen and (max-width: 800px) {
+  .responsive {
+    display: none;
+  }
+}
+
+
 a {
   color: inherit;
   text-decoration: none;
