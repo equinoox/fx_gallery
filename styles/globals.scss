@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  &:before{
+    content:'';
+    content: "";
+    width: 100%;
+    height: 100vh;
+    // background: linear-gradient(to right bottom, #272727, #616161, #a2a2a2, #029073, #32b37b);
+    // background: #D3D3D3;
+    background-image: url("../public/bg1.png");
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    animation: change 20s infinite ease-in-out;
+  }
+}
+
+.text-shadow{
+  text-shadow: 0px 2px 0px rgb(0 0 0 / 30%);
+}
+
+.adjacent-post{
+  & .arrow-btn{
+    transition: width 300ms ease;
+    width: 50px;
+  }
+  &:hover{
+    & .arrow-btn{
+      width: 60px;
+    }
+  }
+}
+
+.full-content {
+  height: 76vh;
+}
+
+.blob {
+	overflow: hidden;
+	width: 20rem;
+	height: 20rem;
+	border-radius: 
+		42% 56% 72% 28% / 42% 42% 56% 48%;
+
+	background: #32323285;
+	background-size:cover;
+	background-position: center;
+
+	animation: morph 3.75s linear infinite;
+}
+
+
+@keyframes morph {
+	0%, 100% {
+		border-radius: 
+			42% 56% 72% 28% / 42% 42% 56% 48%;
+	}
+	33% {
+		border-radius: 
+			72% 28% 48% 48% / 28% 28% 72% 72%;
+	}
+	66% {
+		border-radius: 
+			100% 56% 56% 100% / 100% 100% 56% 56%;
+	}
+}
+
+@keyframes change{
+  0%
+  {
+    background-image: url(../public/bg2.png);
+  }
+  20%
+  {
+    background-image: url(../public/bg3.png);
+  }
+  40%
+  {
+    background-image: url(../public/bg1.png);
+  }
+  60%
+  {
+    background-image: url(../public/bg2.png);
+  }
+  80%
+  {
+    background-image: url(../public/bg3.png);
+  }
+}
+
+
+.react-multi-carousel-list {
+  & .arrow-btn{
+    transition: width 300ms ease;
+    width: 50px;
+    &:hover{
+      width: 60px;
+    }
+  }
+  
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
