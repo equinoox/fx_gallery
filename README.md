@@ -44,3 +44,7 @@ The application focuses on performance, usability, and maintainable architecture
 - 🎨 Tailwind CSS
 - 💅 SCSS (via `sass`)
 
+### Data & APIs
+- 🔗 GraphQL (`graphql-request`)
+- 🧠 GraphCMS (Headless CMS)
+
